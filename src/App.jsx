@@ -1,17 +1,12 @@
 import {useState} from "react";
+import Counter from "./components/Counter.jsx";
 
 function App() {
-  const [likes, setLikes] = useState(0)
-  console.log(likes);
-  console.log(setLikes);
-
-  return (
-    <div className="App">
-      <h1>{likes}</h1>
-      <button onClick={() => setLikes(likes + 1)}>Increment</button>
-      <button onClick={() => setLikes(likes - 1)}>Decrement</button>
-    </div>
-  )
+    return (
+        <div className="App">
+            <Counter />
+        </div>
+    );
 }
 
 export default App
